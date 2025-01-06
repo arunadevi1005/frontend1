@@ -28,7 +28,7 @@ const User = () => {
     }
     return (
         <div className='user'>
-            <h1>User</h1><br/>
+            <h1>User</h1>
             <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol> 
             
             <table border="1">
