@@ -1,13 +1,17 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import './Color.css';
 const User = () => {
+    
+    const navigate=useNavigate();
     const [user, setUser] = useState([]);
     useEffect(()=>{
         axios.get('https://backendhosting-1.onrender.com/api/user/fetch')
         .then((response)=>{
             setUser(response.data.users);
+            
         })
         .catch((error)=>{
             console.log(error);})
@@ -16,6 +20,7 @@ const User = () => {
         axios.delete(`https://backendhosting-1.onrender.com/api/user/deleted/${id}`)
         .then((response)=>{
             console.log("user deleted"); 
+            navigate('/');
         })
         .catch((error)=>{
             console.log(error);
