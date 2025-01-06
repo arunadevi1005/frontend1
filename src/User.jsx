@@ -30,9 +30,8 @@ const User = () => {
         
         <div className='user'>
             <p><marquee>Hiii Guyssss👋👍</marquee></p>
-            <h2>User</h2>
-            <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol> 
-            
+            <h1>User</h1>
+             
             <table border="1">
                 <tr>
                     <th>Name</th>
