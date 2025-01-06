@@ -1,0 +1,13 @@
+ol.roman {
+    list-style-type: upper-roman; /* Use Roman numerals */
+  }
+  
+  ul.symbols {
+    list-style-type: none; /* Remove default bullets */
+  }
+  
+  ul.symbols li::before {
+    content: "\002A"; 
+    position: relative; 
+    left: 0; 
+  }
