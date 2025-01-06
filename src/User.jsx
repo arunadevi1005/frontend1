@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 import './Color.css';
 const User = () => {
-    <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol> 
+    
     const navigate=useNavigate();
     const [user, setUser] = useState([]);
     useEffect(()=>{
@@ -28,7 +28,8 @@ const User = () => {
     }
     return (
         <div className='user'>
-            <h1>User</h1>
+            <h1>User</h1><br/>
+            <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol> 
             
             <table border="1">
                 <tr>
