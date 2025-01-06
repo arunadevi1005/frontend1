@@ -9,7 +9,7 @@ function Apps() {
     return (
         <Router>
         <div className="App">
-        <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol>  
+         
         
         </div>
         <Routes>
