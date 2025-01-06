@@ -10,18 +10,7 @@ const UpdateUser = () => {
     const navigate = useNavigate();
     const {id} = useParams();
 
-    useEffect(() => {
-        axios.get(`https://backendhosting-1.onrender.com/api/user/${id}`)
-            .then((response) => {
-                const user = response.data.user;
-                setName(user.Name);
-                setEmail(user.Email);
-                setAddress(user.Address);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
+    
 
     const updateuser=(e)=>{
         e.preventDefault();
