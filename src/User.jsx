@@ -28,7 +28,7 @@ const User = () => {
     }
     return (
         <div className='user'>
-            <h1>User</h1>
+            <h2>User</h2>
             <ol><li><Link to ="/CreateUser">CreateUser</Link></li></ol> 
             
             <table border="1">
@@ -46,7 +46,9 @@ const User = () => {
                             <td>{users.Address}</td>
                             <td>
                                 
-                                    <button> <Link to={`/UpdateUser/${users._id}`}>Update</Link></button>
+                                    <Link to={`/UpdateUser/${users._id}`}>
+                                    <button> Update</button>
+                                    </Link>
                                 <button onClick={(e)=>deleteuser(users._id)}>Delete</button>
                             </td>
                         </tr>

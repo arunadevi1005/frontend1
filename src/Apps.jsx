@@ -3,15 +3,31 @@ import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CreateUser from './CreateUser';
 import UpdateUser from './UpdateUser';
 import User from './User';
+import './Color.css';
 
 
 function Apps() {
     return (
-        <Router>
-        <div className="App">
-         
+      <>
+
+      
+<Router>
+    <div className="App">
+      
+        <nav className="navbar">
         
-        </div>
+            <ul className="nav-links">
+                <li>
+                    
+                    <Link to="/">User</Link>
+                </li>
+                <li>
+                    <Link to="/CreateUser">Create User</Link>
+                </li>
+                        
+                   </ul>
+        </nav>
+    </div>
         <Routes>
           <Route path="/" element={<User/>}> </Route>
           <Route path="/CreateUser" element={<CreateUser/>}></Route>
@@ -19,6 +35,8 @@ function Apps() {
         </Routes>
         
       </Router>
+
+    </>
     )
 }
 export default Apps;
