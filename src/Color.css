@@ -24,12 +24,12 @@ tr:nth-child(even) {
 button {
     margin-right: 5px;
     padding: 5px 10px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #000000;
 }
